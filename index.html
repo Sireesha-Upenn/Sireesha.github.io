@@ -1,19 +1,71 @@
-<!DOCTYPE html>
-<link rel="stylesheet" href="styles.css"> 
-<style>
- body {background-color: powderblue; font-family: verdana;}
- h1   {color: blue;}
- p {  border: 1px solid powderblue; }
- p.error { color: red; }
- </style>
 
-<html>
+<html lang="en">
+	<head>
 
-<body>
-<h1>Hello!</h1>
-<p>Welcome to my Portfolio.</p>
-<p>Hi. I am a Master's student in Computer Graphics and Game Technology (CGGT) at University of Pennsylvania.<br> My love for animated movies led me to pursue this course. I am from India, where I pursued my undergraduate degree in Computer Science. <br> Other than graphics, I love photography, exploring new places, watching tv series and playing tennis! </p>
-<a href="https://sites.google.com/view/sireesha/home/projects?authuser=0">View My Projects here</a>
-<p class="error">I am different</p>
-</body>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-159359243-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-159359243-1');
+		</script>
+
+
+		<meta charset="UTF-8" />
+		<title>SireeshaPutcha : Home Page</title>
+		<link rel="stylesheet" type="text/css" href="css/home.css"> 
+		<!--  Three.js CDN  -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r83/three.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> 
+		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans" />
+
+		<link rel="icon" type="image/png" href="http://www.hannahbollar.com/img/usingIcon.png">
+
+		<script>
+			 function detectmob() {
+
+		 		// console.log("third = " + /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent));
+			   if(/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+			     return true; //-- move to mobile
+			   } else {
+			     return false; //-- ok with desktop
+			   }
+			}
+			if (detectmob()) {
+				window.location = 'm_Home.html';
+			}
+		</script>
+
+	</head>
+	<body>
+	<!--  Our code  -->
+	<div id = "LeftMenuBar">
+		<a href="#"><ul>HOME</ul></a>
+		<a href="About.html"><ul>ABOUT</ul> </a>
+		<a href="DemoReel.html" target="_blank"><ul>DEMO REEL</ul></a>
+		<a href="./files/HannahBollar_Resume.pdf" target="_blank"><ul>RESUME</ul>  <!--<img title="RESUME" src="img/resume.png" height="40px"/>--></a>
+		<a href="Code.html"><ul>CODE</ul>  <!--<img title="CODING PROJECTS"src="img/coding.png" height="40px"/>--></a>
+	
+		<h4>© Sireesha Putcha 2019</h4>
+	</div>
+	<div id = "TextContent">
+		<h1>
+			Hannah Bollar
+			<br>
+			<p>
+			<a href = "https://www.linkedin.com/in/sireesha-putcha-474769185/" target="_blank"><img src="img/linkedin.jpg"/></a>
+			<a href="https://github.com/hanbollar" target="_blank"><img src="img/github.jpg"></a>
+			<a href="https://www.facebook.com/sireesha.putcha98" target="_blank"><img src="img/fb.jpg"></a>
+			<a href = "mailto:hanbollar@gmail.com"><img src="img/mail.png"></a>
+			</p>
+		</h1>
+		<div id = "ScriptInHeader">
+			<!-- <script src="js/home_background.js"></script> -->
+		</div>
+	</div>
+	<div id = "UpperContainer">
+	</div>
+	</body>
 </html>
